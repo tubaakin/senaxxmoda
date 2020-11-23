@@ -139,7 +139,7 @@ section {
 }
 
 nav {
-    width: auto;
+    width: 100%;
     float: right;
     margin-top: 5px;
     height: auto;
