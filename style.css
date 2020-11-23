@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(177, 172, 182);
+    font-family: 'Slabo 27px', serif;
+}
+
+#social {
+    color: rgb(44, 42, 42);
+    background-color: rgb(218, 218, 218);
+    height: 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 16px;
+    text-align: center;
+    padding: 6px;
+}
+
+font {
+    letter-spacing: 2px;
+}
+
+span {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    height: 800px;
+    border: 3px solid rgb(204, 199, 204);
+}
+
+@media(max-width:1120px) {
+    #container {
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+    }
+    nav li {
+        width: 200px;
+        font-size: 12px;
+        text-align: start;
+    }
+}
+
+@media(max-width:1030px) {
+    #container {
+        width: 100%;
+    }
+    nav ul li {
+        width: 130px;
+        font-size: 15px;
+        text-align: start;
+        display: block;
+    }
+    nav li a {
+        padding: 7px 0 7px 0;
+        text-align: center;
+        height: 30px;
+        margin-top: 0;
+    }
+}
+
+@media(max-width:680px) {
+    nav ul li {
+        width: 130px;
+        font-size: 15px;
+        text-align: start;
+        width: 33.33%;
+    }
+    nav li a {
+        padding: 7px 0 7px 0;
+        text-align: center;
+        height: 30px;
+    }
+    #navkariyer {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:380px) {
+    nav ul li {
+        width: 130px;
+        font-size: 15px;
+        text-align: start;
+        width: 100%;
+    }
+    nav li a {
+        padding: 7px 0 7px 0;
+        text-align: center;
+        height: 30px;
+    }
+    #navkariyer {
+        margin-left: 0px;
+    }
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    box-shadow: 0 2px 8px 2px rgb(204, 199, 204);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+#headerresim {
+    width: 100%;
+    height: 180px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(204, 199, 204);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgb(204, 199, 204);
+    margin-top: 15px;
+    overflow: auto;
+}
+
+nav {
+    width: auto;
+    float: right;
+    margin-top: 5px;
+    height: auto;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 12px 76px;
+    background-color: rgb(85, 83, 97);
+    color: snow;
+    border-bottom: 1px salmon;
+}
+
+nav li a {
+    text-decoration: none;
+    display: block;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: rgb(178, 165, 212);
+}
+
+main {
+    height: auto;
+    width: 100%;
+}
+
+.icerik {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px 2px rgb(204, 199, 204);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.rsm {
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    width: 100%;
+    height: 55px;
+    color: white;
+    line-height: 55px;
+    text-align: center;
+    background-color: rgb(85, 83, 97);
+    border-radius: 5px;
+}
+
+#hakkimizdarsm {
+    width: 350px;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: large;
+    margin-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+    margin-top: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-size: large;
+    margin-top: 40px;
+}
+
+.kariyer {
+    width: 31%;
+    height: 100%;
+    background-color: rgb(241, 231, 231);
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgb(233, 233, 233);
+}
+
+.karresim {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.karbaslik {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 8px;
+    color: black;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+}
+
+iframe {
+    width: 98%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px 2px rgb(233, 233, 233);
+    margin-left: 10px;
+}
+
+.section1 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(241, 231, 231);
+    padding: 10px;
+}
+
+.form {
+    width: 49%;
+    float: left;
+    height: 380px;
+    border: 1px solid bisque;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.col25 {
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+
+.col75 {
+    width: 75%;
+    float: left;
+    margin-top: 6px;
+}
+
+.adres {
+    width: 49%;
+    float: right;
+    height: 380px;
+    border: 1px solid bisque;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.span1 {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 16px;
+}
